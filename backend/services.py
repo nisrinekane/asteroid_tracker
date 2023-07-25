@@ -2,6 +2,7 @@ import requests
 from requests.exceptions import RequestException
 import os
 from dotenv import load_dotenv
+import pandas as pd
 
 load_dotenv()
 NASA_API_KEY = os.getenv('NASA_API_KEY')
@@ -20,5 +21,12 @@ def fetch_asteroid_data():
         print('Failed to parse asteroid data')
         return None
     
-    return data
+    # near earth objects firld:
+    asteroids = data.get('near_earth_objects', [])
+
+    # commvert data to pd df:
+    df = pd.DataFrame(asteroids)
+
+    return df
+    # return data
 
