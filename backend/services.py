@@ -10,6 +10,9 @@ NASA_API_KEY = os.getenv('NASA_API_KEY')
 def fetch_asteroid_data():
     try:
         response = requests.get(f'https://api.nasa.gov/neo/rest/v1/neo/browse?api_key={NASA_API_KEY}', timeout=10)
+        data = response.json()
+        print(data['near_earth_objects'][0])  # Print out the first asteroid's data
+
         response.raise_for_status()
     except RequestException as e:
         print(f'failed to fetch asteroid data: {e}')
@@ -30,3 +33,5 @@ def fetch_asteroid_data():
     return df
     # return data
 
+if __name__ == "__main__":
+    fetch_asteroid_data()
