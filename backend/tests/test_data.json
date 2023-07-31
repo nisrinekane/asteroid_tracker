@@ -1,0 +1,57 @@
+[
+    {
+        "name":"Asteroid 1",
+        "close_approach_data":[
+            {
+                "relative_velocity": {
+                    "kilometers_per_hour":"5000"
+                }
+            }
+        ],
+        "is_potentially_hazardous_asteroid":false
+    },
+    {
+        "name":"Asteroid 2",
+        "close_approach_data":[
+            {
+                "relative_velocity": {
+                    "kilometers_per_hour":"15000"
+                }
+            }
+        ],
+        "is_potentially_hazardous_asteroid":true
+    },
+    {
+        "name":"Asteroid 3",
+        "close_approach_data":[
+            {
+                "relative_velocity": {
+                    "kilometers_per_hour":"25000"
+                }
+            }
+        ],
+        "is_potentially_hazardous_asteroid":true
+    },
+    {
+        "name":"Asteroid 4",
+        "close_approach_data":[
+            {
+                "relative_velocity": {
+                    "kilometers_per_hour":"35000"
+                }
+            }
+        ],
+        "is_potentially_hazardous_asteroid":false
+    },
+    {
+        "name":"Asteroid 5",
+        "close_approach_data":[
+            {
+                "relative_velocity": {
+                    "kilometers_per_hour":"45000"
+                }
+            }
+        ],
+        "is_potentially_hazardous_asteroid":true
+    }
+]
